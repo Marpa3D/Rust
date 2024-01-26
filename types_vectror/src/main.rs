@@ -11,4 +11,18 @@ fn main() {
     numbers_vec[0] = 8;
     println!("Первый элемент вектора изменен на число 8: {}", numbers_vec[0]);
     println!("Содержимое вектора: {:?}", numbers_vec);
+
+    // Инициализацция чем-то)
+    let some_vec = vec!["Somesings"; 13];
+    println!("Содержимое вектора: {:?}", some_vec);
+
+    // Вектор строковых литералов
+    let str_vec: Vec<&str> = vec!["абрикос", "вишня", "яблоко", "виноград"];
+    println!("Вектор строк: {:?}", str_vec);
+
+    // Срез вектора
+    let sub_vec = &str_vec[1..=3];
+    println!("Слайс вектора: {:?}", sub_vec);
+
+
 }
